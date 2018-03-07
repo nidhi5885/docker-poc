@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  dockerv3:
+    image: dockerv3
+    build:
+      context: ./DockerV3
+      dockerfile: Dockerfile
+networks:
+  default:
+    external:
+      name: nat
